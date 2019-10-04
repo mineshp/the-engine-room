@@ -1,0 +1,3 @@
+engineRoomTableName: ligaDev
+whitelist: 'http://localhost:3000'
+s3Bucket: the-beautiful-game

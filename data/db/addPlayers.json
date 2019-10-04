@@ -1,0 +1,274 @@
+{
+  "ligaDev": [
+      {
+          "PutRequest": {
+              "Item": {
+                "playerId": {
+                  "S": "SQQBEX"
+                },
+                "gameId": {
+                  "S": "ZNHSGH"
+                },
+                "nickName": {
+                  "S": "pri"
+                },
+                "player": {
+                  "S": "priyen"
+                },
+                "rating": {
+                  "N": "3"
+                },
+                "gameName": {
+                  "S": "TNF"
+                },
+                "available": {
+                  "BOOL": true
+                },
+                "confirmationTime": {
+                  "S": "2019-09-06T10:23:50.140Z"
+                }
+              }
+          }
+       },
+       {
+          "PutRequest": {
+              "Item": {
+                "playerId": {
+                  "S": "KVCZGH"
+                },
+                "gameId": {
+                  "S": "ZNHSGH"
+                },
+                "nickName": {
+                  "S": "ne"
+                },
+                "player": {
+                  "S": "nehal"
+                },
+                "rating": {
+                  "N": "1"
+                },
+                "gameName": {
+                  "S": "TNF"
+                },
+                "available": {
+                  "BOOL": true
+                },
+                "confirmationTime": {
+                  "S": "2019-09-06T10:20:50.140Z"
+                }
+              }
+          }
+      },
+      {
+        "PutRequest": {
+            "Item": {
+              "playerId": {
+                "S": "YRTCXF"
+              },
+              "gameId": {
+                "S": "ZNHSGH"
+              },
+              "nickName": {
+                "S": "aj"
+              },
+              "player": {
+                "S": "ajit"
+              },
+              "rating": {
+                "N": "1"
+              },
+              "gameName": {
+                "S": "TNF"
+              },
+              "available": {
+                "BOOL": true
+              },
+              "confirmationTime": {
+                "S": "2019-09-06T10:18:50.140Z"
+              }
+            }
+        }
+      },
+      {
+        "PutRequest": {
+            "Item": {
+              "playerId": {
+                "S": "GGACZL"
+              },
+              "gameId": {
+                "S": "ZNHSGH"
+              },
+              "nickName": {
+                "S": "gurdeep"
+              },
+              "player": {
+                "S": "gurdeep"
+              },
+              "rating": {
+                "N": "2"
+              },
+              "gameName": {
+                "S": "TNF"
+              },
+              "available": {
+                "BOOL": true
+              },
+              "confirmationTime": {
+                "S": "2019-09-06T10:25:50.140Z"
+              }
+            }
+        }
+      },
+      {
+        "PutRequest": {
+            "Item": {
+              "playerId": {
+                "S": "LCSGSB"
+              },
+              "gameId": {
+                "S": "ZNHSGH"
+              },
+              "nickName": {
+                "S": "jason"
+              },
+              "player": {
+                "S": "jason"
+              },
+              "rating": {
+                "N": "2"
+              },
+              "gameName": {
+                "S": "TNF"
+              },
+              "available": {
+                "BOOL": true
+              },
+              "confirmationTime": {
+                "S": "2019-09-06T10:29:50.140Z"
+              }
+            }
+        }
+      },
+      {
+        "PutRequest": {
+            "Item": {
+              "playerId": {
+                "S": "CKDZQV"
+              },
+              "gameId": {
+                "S": "ZNHSGH"
+              },
+              "nickName": {
+                "S": "fyfe"
+              },
+              "player": {
+                "S": "andy"
+              },
+              "rating": {
+                "N": "2"
+              },
+              "gameName": {
+                "S": "TNF"
+              },
+              "available": {
+                "BOOL": false
+              },
+              "confirmationTime": {
+                "S": "2019-09-06T10:22:50.140Z"
+              }
+            }
+        }
+      },
+      {
+        "PutRequest": {
+            "Item": {
+              "playerId": {
+                "S": "KLBPBD"
+              },
+              "gameId": {
+                "S": "ZNHSGH"
+              },
+              "nickName": {
+                "S": "john"
+              },
+              "player": {
+                "S": "john"
+              },
+              "rating": {
+                "N": "2"
+              },
+              "gameName": {
+                "S": "TNF"
+              },
+              "available": {
+                "BOOL": false
+              },
+              "confirmationTime": {
+                "S": "2019-09-06T10:29:50.140Z"
+              }
+            }
+        }
+      },
+      {
+        "PutRequest": {
+            "Item": {
+              "playerId": {
+                "S": "EHZEMP"
+              },
+              "gameId": {
+                "S": "ZNHSGH"
+              },
+              "nickName": {
+                "S": "vivek"
+              },
+              "player": {
+                "S": "vivek"
+              },
+              "rating": {
+                "N": "1"
+              },
+              "gameName": {
+                "S": "TNF"
+              },
+              "available": {
+                "BOOL": false
+              },
+              "confirmationTime": {
+                "S": "2019-09-06T10:29:50.140Z"
+              }
+            }
+        }
+      },
+      {
+        "PutRequest": {
+            "Item": {
+              "playerId": {
+                "S": "YPCAGJ"
+              },
+              "gameId": {
+                "S": "ZNHSGH"
+              },
+              "nickName": {
+                "S": "salik"
+              },
+              "player": {
+                "S": "salik"
+              },
+              "rating": {
+                "N": "2"
+              },
+              "gameName": {
+                "S": "TNF"
+              },
+              "available": {
+                "BOOL": false
+              },
+              "confirmationTime": {
+                "S": "2019-09-06T10:20:50.140Z"
+              }
+            }
+        }
+      }
+  ]
+}

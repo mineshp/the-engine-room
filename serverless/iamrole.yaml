@@ -1,0 +1,21 @@
+- Effect: Allow
+  Action:
+    - dynamodb:Query
+    - dynamodb:Scan
+    - dynamodb:GetItem
+    - dynamodb:PutItem
+    - dynamodb:UpdateItem
+  Resource:
+    - { "Fn::GetAtt": ["engineRoomTable", "Arn" ] }
+    - { "Fn::Join": [ "/", [
+        { "Fn::GetAtt": ["engineRoomTable", "Arn" ] }, "index", "game-player-index"
+      ] ] }
+- Effect: Allow
+  Action:
+    - s3:GetObject
+    - s3:PutObject
+    - s3:PutObjectAcl
+  Resource:
+    - { "Fn::Join": [ "/", [
+        { "Fn::GetAtt": ["gameCatalogBucket", "Arn" ] }, "*"
+    ] ] }

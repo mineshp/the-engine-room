@@ -1,0 +1,3 @@
+TABLE_NAME: ${self:custom.env.engineRoomTableName}
+WHITELIST: ${self:custom.env.whitelist}
+BUCKET_NAME: ${self:custom.env.s3Bucket}

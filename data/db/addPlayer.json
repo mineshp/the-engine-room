@@ -1,0 +1,61 @@
+{
+  "liga-dev": [
+      {
+          "PutRequest": {
+              "Item": {
+                  "owner_name": {
+                      "S": "Test watch 3"
+                  },
+                  "time_stamp": {
+                      "N": "1541524533453"
+                  },
+                  "watch_uuid": {
+                      "S": "A9A0E8B2-CD8D-464A-8787-383A85919A06_1541524533453_Test watch 3"
+                  },
+                  "y_user_accel": {
+                      "S": "0.07286"
+                  }
+              }
+          }
+       },
+       {
+          "PutRequest": {
+              "Item": {
+                  "owner_name": {
+                      "S": "Test watch 4"
+                  },
+                  "time_stamp": {
+                      "N": "1541524533765"
+                  },
+                  "watch_uuid": {
+                      "S": "A9A0E8B2-CD8D-464A-8787-383A85919A06_1541524533453_Test watch 4"
+                  },
+                  "y_user_accel": {
+                      "S": "0.07286"
+                  }
+              }
+          }
+      }
+  ]
+}
+
+{
+  "playerID": {
+    "S": "SCREEN_LIST"
+  },
+  "teamID": {
+    "S": "ZNHSGH"
+  },
+  "nickName": {
+    "S": "pri"
+  },
+  "player": {
+    "S": "priyen"
+  },
+  "rating": {
+    "N": "3"
+  },
+  "teamName": {
+    "S": "TNF"
+  }
+}

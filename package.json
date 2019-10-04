@@ -1,0 +1,49 @@
+{
+  "name": "the-engine-room",
+  "version": "1.0.0",
+  "description": "The api for the beautiful game",
+  "main": "index.js",
+  "scripts": {
+    "start:api": "AWS_PROFILE=min-aws && WHITELIST=http://localhost:3000 node src/index.js",
+    "start:api:local": "AWS_PROFILE=min-aws serverless -- offline",
+    "deploy:dev": "AWS_PROFILE=min-aws sls deploy --stage dev",
+    "test": "NODE_ENV= jest",
+    "test:watch": "npm run test -- --watchAll",
+    "logs": "AWS_PROFILE=min-aws sls logs -f app"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "clearMocks": true,
+    "resetMocks": true,
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!.eslint*"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>[/\\\\](build|docs|node_modules|tools|config|target|app/styles/semantic)[/\\\\]"
+    ],
+    "modulePathIgnorePatterns": [
+      "node_modules"
+    ]
+  },
+  "author": "Minesh Patel",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "aws-sdk": "^2.505.0",
+    "http-errors": "^1.7.3",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-router": "^7.4.0",
+    "serverless-http": "^2.0.2",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "serverless-offline": "^5.10.1",
+    "supertest": "^4.0.2"
+  }
+}

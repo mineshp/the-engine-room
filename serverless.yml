@@ -1,0 +1,45 @@
+service: the-engine-room
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: ${opt:stage,'dev'}
+  region: eu-west-1
+
+# you can add statements to the Lambda function's IAM Role here
+  iamRoleStatements: ${file(./serverless/iamrole.yaml)}
+
+# you can define service wide environment variables here
+  environment: ${file(./serverless/environment.yaml)}
+
+# Cutom Variables
+custom:
+  env: ${file(./serverless/env/${opt:stage, 'dev'}.yaml)}
+  stages:
+    - dev
+    - prod
+  dynamodb:
+    stages:
+      - dev
+    start:
+      port: 8000
+      inMemory: true
+      heapInitial: 200m
+      heapMax: 1g
+      migrate: true
+      seed: true
+      convertEmptyValues: true
+
+functions:
+  app:
+    handler: src/handler.engine
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+
+plugins:
+  - serverless-offline
+
+resources:
+  - ${file(./serverless/resources/dynamo.yaml)}
+  - ${file(./serverless/resources/s3.yaml)}
